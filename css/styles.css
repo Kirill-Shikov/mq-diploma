@@ -947,7 +947,7 @@ body {
 .popup-name:after {
   position: absolute;
   content: "";
-  bottom: 714px;
+  bottom: 500px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 66px;
@@ -960,7 +960,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 39px;
-  margin-left: 16px;
 }
 
 .mailing-email {
@@ -1571,6 +1570,19 @@ body {
     box-sizing: border-box;
     z-index: 2;
   }
+
+  .popup-name:after {
+    position: absolute;
+    content: "";
+    bottom: 465px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    opacity: 0.4;
+  }
+
 }
 
 @media(max-width: 640px) and (orientation: landscape) {
