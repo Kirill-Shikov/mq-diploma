@@ -1550,6 +1550,9 @@ body {
     background-color: #eff6f1;
   }
 
+  .title-news {
+    justify-items: center;
+  }
   .footer {
     width: 100%;
   }
