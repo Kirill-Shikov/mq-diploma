@@ -462,14 +462,26 @@
           <option value="answer">Практически не бываю</option>
         </select>
       </label>
+
+
       <div class="mailing-email">
         <span class="select-label">Вы подписаны на e-mail рассылку?</span>
-        <div class="answer-radio">
-          <label><input type="radio" name="radio"> Да </label>
-          <label><input type="radio" name="radio"> Нет </label>
-        </div>
+        <form>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="Yes" select>
+              <span class="radio-group-text">Да</span>
+          </label>
+        
+          <label>
+            <input type="radio" class="radio" name="no">
+              <span class="radio-group-text">Нет</span>
+          </label>
+        </form>
       </div>
     </div>
+
+
+
     <form class="form">
       <div class="select-group">
         <label class="field-group">
