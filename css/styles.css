@@ -987,35 +987,38 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 10px;
- 
 }
 
 .select-label {
   margin: 0 20px;
 }
 
-.answer-radio {
-  display: flex;
-  margin: 0 20px 20px;
-}
-
-.radio-input:after {
+.radio-group {
+  display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: utl("../svg/form-circle.svg");
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  font-size: 30px;
-  background-repeat: no-repeat;
+  margin: 5px 5px 15px 20px;
 }
 
-.radio-input:after {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.radio {
+  display: none;
+}
+
+.radio-group-text:before {
+  content: " ";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
   background-image: url("../svg/form-empty-circle.svg");
+  vertical-align: middle;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+  padding-right: 10px;
+}
+
+.radio:checked + .radio-group-text:before {
+  background-image: url("../svg/form-circle.svg");
 }
 
 .field-group {
