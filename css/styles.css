@@ -1054,9 +1054,11 @@ body {
   color: #ffffff;
   position: absolute;
   top: -26px;
-  right: -45px; 
-  font-size: 19px; 
+  right: 0;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
+  background-size: 15px;
   background-image: url("../svg/form-x.svg");
   background-repeat: no-repeat;
   color: #3A3C5000
@@ -1263,18 +1265,6 @@ body {
     z-index: 2;
   }
 
-  .popup-close {
-    font-size: 20px;
-    color: #ffffff;
-    position: absolute;
-    top: -31px;
-    right: -45px; 
-    font-size: 22px; 
-    cursor: pointer;
-    background-image: url("../svg/form-x.svg");
-    background-repeat: no-repeat;
-    color: #3A3C5000
-  }
 }
 
 @media(max-width: 640px) and (orientation: portrait) {
