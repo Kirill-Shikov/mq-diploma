@@ -46,22 +46,25 @@ body {
 
 .header {
   margin: 0 ;
-  padding: 19px 0px;
+  padding: 19px 0px 100px;
   width: 100%;
   text-transform: uppercase; 
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 7px;
 }
 
 .logo {
   width: 11%;
-  margin-left: 230px;
+}
+
+.menu {
+align-items: center;
 }
 
 .menu-button {
@@ -72,9 +75,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-left: 0;
-  margin-top: 6px;
   margin-bottom: 0;
-  margin-right: 229px;
   list-style-type: none;
 }
 
@@ -100,9 +101,7 @@ body {
 
 .intro-title {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 98px 0;
+  margin: 98px auto 0;
   text-align: center;
   width: 41%;
   font-size: 45px;
@@ -144,25 +143,25 @@ body {
 }
 
 .trend {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 4px;
   list-style: none;
   padding: 0;
 }
 
+.trend-container-image {
+  height: 100%;
+  background-color: #eff6f1;
+}
+
 .trend-container-one {
-  display: flex;
   background-image: url("../images/trend1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 32vw;
+  padding: 100px 26px 15px 19px;
   position: relative;
   z-index: 0;
-  align-items: end;
-  padding: 100px 26px 15px 19px;
-  background-color: #eff6f1;
 }
 
 .trend-container-one:after {
@@ -178,17 +177,13 @@ body {
 }
 
 .trend-container-two {
-  display: flex;
   background-image: url("../images/trend2.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 32vw;
+  padding: 100px 26px 15px 19px;
   position: relative;
   z-index: 0;
-  align-items: end;
-  padding: 100px 26px 15px 19px;
-  background-color: #eff6f1;
 }
 
 .trend-container-two:after {
@@ -204,17 +199,13 @@ body {
 }
 
 .trend-container-three {
-  display: flex;
   background-image: url("../images/trend3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 32vw;
+  padding: 100px 26px 15px 19px;
   position: relative;
   z-index: 0;
-  align-items: end;
-  padding: 100px 26px 15px 19px;
-  background-color: #eff6f1;
 }
 
 .trend-container-three:after {
@@ -231,17 +222,13 @@ body {
 }
 
 .trend-container-four {
-  display: flex;
   background-image: url("../images/trend4.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 32vw;
+  padding: 100px 26px 15px 19px;
   position: relative;
   z-index: 0;
-  align-items: end;
-  padding: 100px 26px 15px 19px;
-  background-color: #eff6f1;
 }
 
 .trend-container-four:after {
@@ -261,7 +248,6 @@ body {
   border: 3px solid #b59f5b;
   padding: 24px 20px 18px 27px;
   align-self: end;
-  flex-grow: 1;
 }
 
 .trend-list-item {
@@ -309,15 +295,14 @@ body {
 
 .mane-news-list {
   display: flex;
-  width: 50%;
+  width: 70%;
   margin: 0; 
+  margin-top: 20px;
   position: relative;
 }
 
 .picture-news {
   max-width: 377px;
-  max-height: 291px;
-  margin-top: 57px;  
   position: relative ;
   z-index: 0; 
 }
@@ -339,12 +324,12 @@ body {
 .more {
   display: flex;
   padding: 0;
-  margin-top: 48px;
   margin-bottom: 0;
 }
 
 .more-list-item {
   list-style: none;
+  margin-right: 20px;
 }
 
 .more-name {
@@ -355,7 +340,6 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1;
-  margin-right: 20px;
 }
 
 .more-name:hover {
@@ -415,7 +399,6 @@ body {
 
 .new-content {
   display: flex;
-  min-width: 328px;
   margin-top: 41px;
   margin-bottom: 0;
   font-size: 13.3px;
@@ -450,18 +433,18 @@ body {
   color: #0f0d0e;
   text-transform: uppercase;
   text-align: center;
+  
 }
 
 .intro-heading:after {
-  position: absolute;
+  display: flex;
   content: "";
-  bottom: -13px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(150%, 0);
   width: 70px;
   height: 2px;
   background-color: #b59f5b;
   opacity: 0.4;
+  margin-top: 10px;
 }
 
 .news-list {
@@ -471,7 +454,7 @@ body {
 
 .news-mini {
   display: flex;
-  min-width: 270px;
+  
   margin: 0 0 19px 0;
 }
 
@@ -500,7 +483,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  padding-left: 17px;
+  margin-left: 17px;
 }
 
 .news-date {
@@ -508,7 +491,6 @@ body {
   line-height: 1;
   font-family: "Open Sans", sans-serif;
   color: #888888;
-  margin-left: 8px;
   margin-top: 2px;
 }
 
@@ -532,6 +514,8 @@ body {
 }
 
 .search {
+  display: flex;
+  flex-direction: row-reverse;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -560,11 +544,12 @@ body {
 .button-search {
   display: flex;
   width: 48px;
+  height: 48px;
+  margin-top: 43px;
   background-color: #b59f5b;
   border-style: none;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
 }
 
 .button-search:hover {
@@ -600,9 +585,8 @@ body {
 
 .button {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 48px;
-  padding: 6px;
   font-size: 18px;
   line-height: 2.8;
   color: #ffffff;
