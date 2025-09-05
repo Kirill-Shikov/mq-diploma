@@ -1223,9 +1223,7 @@ body {
   }
 
   .mane-news-list {
-    display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 0 0 50px;
   }
 
@@ -1289,20 +1287,8 @@ body {
     width: 90%;
   }
 
-  .shop-container-one {
-    background-image: url("../images/shop-item-mobile1.jpg");
-    height: 80vw;
-    
-  }
-
-  .shop-container-two {
-    background-image: url("../images/shop-item-mobile2.jpg");
-    height: 80vw;
-  }
-
-  .shop-container-three {
-    background-image: url("../images/shop-item-mobile3.jpg");
-    height: 80vw;
+  .shop-img {
+    height: 55vw;
   }
 
   .title-news {
@@ -1452,21 +1438,6 @@ body {
     margin: 0;
     line-height: 1.2;
     align-self: center;
-  }
-
-  .shop {
-    flex-wrap: wrap;
-  }
-  
-  .shop-container-one {
-    background-image: url("../images/shop-item-tablet1.jpg");
-  }
-  .shop-container-two {
-    background-image: url("../images/shop-item-tablet2.jpg");
-  }
-
-  .shop-container-three {
-    background-image: url("../images/shop-item-tablet3.jpg");
   }
 
   .popup-content {
