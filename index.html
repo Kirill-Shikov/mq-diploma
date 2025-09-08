@@ -242,9 +242,10 @@
     <form class="search">
       <label class="search-group">
         <input type="search" class="field" name="query" placeholder="Найти...    " required>
+        <span class="visually-hidden">строка поиска новостей</span>
       </label>
-      <span class="visually-hidden">строка поиска новостей</span>
       <button class="button-search">
+        <span class="visually-hidden">кнопка найти</span>
         <svg xmlns="http://www.w3.org/2000/svg" 
              fill="none" 
              width="15"
@@ -256,8 +257,7 @@
                     d="M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 122.192 62.271 206.72s68.765 153.293 153.293 153.293 153.293-68.765 153.293-153.293z"/></g>
                     <defs>
                       <clipPath id="clip0">
-                        <path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs></svg>
-                        <span class="visually-hidden">кнопка найти</span>
+                        <path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs></svg>         
       </button>        
       </form>
     </section>
@@ -306,7 +306,17 @@
   <div class="shop">
     <article class="shop-container">
       <picture class="shop-container-three">
-        <img class="shop-img" src="images/shop-item-desk1.jpg" alt="Шестиугольная рамка">
+        <img class="shop-img" 
+             src="images/shop-item-desk1.jpg" 
+             srcset="
+               images/shop-item-mobile1.jpg,
+               images/shop-item-table1.jpg,
+               images/shop-item-desk1.jpg"
+             sizes="
+               (max-width: 640x),
+               (max-width: 1199x),
+               (min-width: 1200px)"
+             alt="Шестиугольная рамка">
       </picture>
       <div class="shop-box">
         <h3 class="shop-heading">Подушки на диван</h3>
@@ -327,7 +337,17 @@
     </article>
     <article class="shop-container">
       <picture class="shop-container-three">
-        <img class="shop-img" src="images/shop-item-desk2.jpg" alt="Шестиугольная рамка">
+         <img class="shop-img" 
+              src="images/shop-item-desk2.jpg"
+              srcset="
+                images/shop-item-mobile2.jpg,
+                images/shop-item-table2.jpg,
+                images/shop-item-desk2.jpg"
+              sizes="
+                (max-width: 640x),
+                (max-width: 1199x),
+                (min-width: 1200px)"
+              alt="Шестиугольная рамка">
       </picture>
       <div class="shop-box">
         <h3 class="shop-heading">Кукла «Зайчик»</h3>
@@ -349,7 +369,17 @@
     </article>
     <article class="shop-container">
       <picture class="shop-container-three">
-        <img class="shop-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+        <img class="shop-img" 
+             src="images/shop-item-desk3.jpg"
+             srcset="
+               images/shop-item-mobile3.jpg,
+               images/shop-item-table3.jpg,
+               images/shop-item-desk3.jpg"
+             sizes="
+               (max-width: 640x),
+               (max-width: 1199x),
+               (min-width: 1200px)"
+             alt="Шестиугольная рамка">
       </picture>
       <div class="shop-box">
         <h3 class="shop-heading">Шестиугольная рамка</h3>
@@ -404,14 +434,16 @@
       <div class="popup-content">
       <div  class="popup-name">ВАШ ФИДБЕК</div>
       <div class="form-group">
-      <label class="select-group">
-        <span class="select-label">как часто вы заходите на сайт?</span>
-        <select class="select">
-          <option value="answer">Почти каждый день</option>
-          <option value="answer">Часто захожу</option>
-          <option value="answer">Практически не бываю</option>
-        </select>
-      </label>
+        <form>
+          <label class="select-group">
+            <span class="select-label">как часто вы заходите на сайт?</span>
+            <select class="select">
+              <option value="answer">Почти каждый день</option>
+              <option value="answer">Часто захожу</option>
+              <option value="answer">Практически не бываю</option>
+            </select>
+          </label>
+        </form>
       <div class="mailing-email">
         <span class="select-label">Вы подписаны на e-mail рассылку?</span>
         <form>
@@ -420,13 +452,14 @@
               <span class="radio-group-text">Да</span>
           </label>
         
-          <label>
-            <input type="radio" class="radio" name="no">
+          <form>
+            <label>
+              <input type="radio" class="radio" name="no">
               <span class="radio-group-text">Нет</span>
-          </label>
-        </form>
+            </label>
+          </form>
+        </div>
       </div>
-    </div>
     <form class="form">
       <div class="select-group">
         <label class="field-group">
@@ -434,11 +467,12 @@
           <input class="field-text" placeholder="Можетб больше рецептов?" required>
         </label>
       </div>
-    </form> 
     <div class="form-group form-actions">
       <button class="button-text" type="submit">Отправить</button>
     </div>
-        <label for="popup1" class="popup-close"></label>
+  </form> 
+        <button for="popup1" class="popup-close">закрыть</button>
+        <span class="close"></span>
       </div>
     </div>
     </div>
