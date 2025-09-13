@@ -19,7 +19,7 @@ body {
 }
 
 .header-wrap {
-  width: 100%;
+  width: 1200px;
   background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -58,6 +58,7 @@ body {
 
 .logo {
   width: 11%;
+  margin-left: 163px;
 }
 
 
@@ -96,11 +97,11 @@ body {
 
 .intro-title {
   display: flex;
-  margin: 98px auto 0;
+  margin: 71px auto 0;
   text-align: center;
   width: 41%;
-  font-size: 45px;
-  line-height: 1.8;
+  font-size: 31px;
+  line-height: 2;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -108,6 +109,7 @@ body {
 }
 
 .title-news {
+  width: 1200px;
   position: relative;
   z-index: 0;
 }
@@ -115,11 +117,11 @@ body {
 .title-name {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   color: #0f0d0e;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 15px;
   margin-bottom: 30px;
   justify-items: center;
 }
@@ -143,11 +145,9 @@ body {
 }
 
 .trend-container-image {
-  display: flex;
   background-color: #eff6f1;
   position: relative;
   min-width: 24%;
-  height: 32vh;
 }
 
 .trend-container-image:after {
@@ -169,6 +169,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
+  height: 30vh;
 }
 
 .trend-container-two {
@@ -178,6 +179,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
+  height: 30vh;
 }
 
 .trend-container-three {
@@ -187,6 +189,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
+  height: 30vh;
 }
 
 .trend-container-four {
@@ -196,6 +199,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
+  height: 30vh;
 }
 
 .trend-box {
@@ -220,7 +224,7 @@ body {
 
 .trend-container {
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1;
   margin: 0;
 }
 
@@ -244,7 +248,7 @@ body {
 .page {
   display: flex;
   text-transform: uppercase;
-  justify-self: center;
+  justify-content: space-between;
   max-width: 1170px;
   padding: 0 15px;
 }
@@ -255,7 +259,6 @@ body {
 
 .mane-news-list {
   display: flex;
-  width: 90%;
   margin: 0; 
   margin-top: 20px;
   position: relative;
@@ -356,7 +359,6 @@ body {
 }
 
 .new-content {
-  display: flex;
   margin-top: 41px;
   margin-bottom: 0;
   font-size: 13.3px;
@@ -364,19 +366,19 @@ body {
   color: #0f0d0e;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  text-transform: none;
 }
 
 .new-box {
   display: flex;
   flex-direction: column;
-  width: 296px;
+  width: 270px;
   margin-top: 34px;
 }
 
 .heading {
   display: flex;
   flex-direction: column; 
-  width: 92%;
   text-align: right;
 }
 
@@ -395,7 +397,7 @@ body {
 .intro-heading:after {
   display: flex;
   content: "";
-  transform: translate(150%, 0);
+  margin: 0 100px;
   width: 70px;
   height: 2px;
   background-color: #b59f5b;
@@ -472,24 +474,24 @@ body {
 .search {
   display: flex;
   width: 100%;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
 .search-group {
   display: flex;
-  margin-top: 44px;
+  margin-bottom: 35px;
 }
 
 .field {
   box-sizing: border-box;
-  width: 224px;
+  width: 222px;
   height: 48px;
   padding: 19px;
   font-size: 13px;
   text-align: left;
   background-color: #f4f7f6;
   border-style: none; 
-  margin-bottom: 35px;
 }
 
 .field:focus {
@@ -500,11 +502,14 @@ body {
   display: flex;
   width: 48px;
   height: 48px;
-  margin-top: 43px;
   background-color: #b59f5b;
   border-style: none;
   justify-content: center;
   align-items: center;
+  background-image: url("../svg/search.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-search:hover {
@@ -518,18 +523,17 @@ body {
 .button-box {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-bottom: 9px;
 }
 
 .field-button {
-  display: flex;
   margin-top: 16px;
-  width: 79%;
-  height: 20px;
+  height: 50px;
   margin-bottom: 19px;
   font-size: 13px;
-  padding: 19px 17px 19px 19px;
+  padding: 19px 17px 19px 17px;
+  box-sizing: border-box;
+  width: 100%;
   background-color: #f4f7f6;
   border-style: none;
 }
@@ -539,8 +543,6 @@ body {
 }
 
 .button {
-  display: flex;
-  width: 90%;
   height: 48px;
   font-size: 18px;
   line-height: 2.8;
@@ -580,7 +582,7 @@ body {
 }
 
 .tag-name {
-  padding: 8px 11px 8px 11px;
+  padding: 8px 9x 8px 9px;
   font-size: 12px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -664,11 +666,12 @@ body {
 }
 
 .shop-box {
+  display: flex;
+  flex-direction: column;
   outline: 3px solid #b59f5b;
   outline-offset: 3px;
   padding: 48px 20px 36px;
   margin: -20px;
-  height: 30%;
   align-self: center;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
@@ -748,14 +751,19 @@ body {
   background-color: #323232;
 }
 
+.footer {
+  width: 1200px;
+}
+
 .icon {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   background: #f3f7f5;
   margin: 0 auto;
   padding: 31px;
   list-style-type: none;
+  gap: 20px;
 }
 
 
@@ -764,7 +772,6 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  margin-right: 31px;
 }
 
 .pinterest {
@@ -772,7 +779,6 @@ body {
   display: flex;
   width: 20px;
   height: 20px;
-  margin-right: 31px;
 }
 
 .tumblr {
@@ -781,7 +787,6 @@ body {
   text-align: center;
   width: 20px;
   height: 20px;
-  margin-right: 31px;
 }
 
 .visually-hidden {
@@ -799,6 +804,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 73px;
+  margin-bottom: 30px;
   font-size: 12px;
   color: #999999;
   font-weight: 700;
@@ -817,15 +823,6 @@ body {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-}
-
-.popup-close-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1;
 }
 
 .popup-toggle:checked + .popup {
@@ -984,6 +981,7 @@ body {
 @media(min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .header-wrap {
     background-image: url("../images/banner-bg-tablet.jpg");
+    width: 100%;
   }
 
   .logo {
@@ -1058,9 +1056,17 @@ body {
     font-size: 40px;
   }
 
+  .title-news {
+    width: 100%;
+  }
+
   .trend {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page {
+    width: 100%;
   }
 
   .mane-news-list {
@@ -1082,11 +1088,16 @@ body {
     flex-wrap: wrap;
   }
 
+  .footer {
+    width: 100%;
+  }
+
 }
 
 @media(max-width: 640px) and (orientation: portrait) {
   .header-wrap {
     background-image: url("../images/banner-mobile.jpg");
+    max-width: 640px;
   }
 
   .header-container {
@@ -1162,6 +1173,9 @@ body {
     font-size: 26px;
   }
 
+    .title-news {
+    max-width: 640px;
+  }
   .title-name {
     font-size: 16px;
   }
@@ -1174,17 +1188,17 @@ body {
   .page {
     flex-direction: column;
     align-items: center;
-    width: 84%;
+    max-width: 640px;
     margin: 0 auto;
   }
 
   .news {
-    width: 100%;
     margin-right: 20px;
     margin-left: 20px;
   }
 
   .text {
+    width: 330px;
     margin: 0;
   }
 
@@ -1193,6 +1207,16 @@ body {
     margin: 0 0 50px;
   }
 
+  .mane-news-list:after {
+    display: flex;
+    content: "";
+    margin: 0;
+    width: 400px;
+    height: 2px;
+    background-color: #808080;
+    opacity: 0.4;
+    margin-top: 10px;
+  }
   .card {
     display: flex;
     padding: 0;
@@ -1239,6 +1263,10 @@ body {
 
   .shop-container {
     width: 90%;
+  }
+
+  .footer {
+    max-width: 640px;
   }
 
   .icon {
