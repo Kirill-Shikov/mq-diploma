@@ -19,7 +19,7 @@ body {
 }
 
 .header-wrap {
-  width: 1200px;
+  min-width: 1200px;
   background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,7 +42,7 @@ body {
 
 .header {
   margin: 0 ;
-  padding: 19px 0px 100px;
+  padding: 14px 0px 88px;
   width: 100%;
   text-transform: uppercase; 
 }
@@ -51,14 +51,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1170px;
+  min-width: 864px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 164px;
 }
 
 .logo {
-  width: 11%;
-  margin-left: 163px;
+  width: 15%;
 }
 
 
@@ -80,7 +79,7 @@ body {
 }
 
 .menu-list-item:nth-child(1n+2) {
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 .menu-name {
@@ -88,7 +87,7 @@ body {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .menu-name:hover {
@@ -99,9 +98,9 @@ body {
   display: flex;
   margin: 71px auto 0;
   text-align: center;
-  width: 41%;
+  width: 42%;
   font-size: 31px;
-  line-height: 2;
+  line-height: 1.8;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -109,7 +108,7 @@ body {
 }
 
 .title-news {
-  width: 1200px;
+  min-width: 1200px;
   position: relative;
   z-index: 0;
 }
@@ -121,8 +120,8 @@ body {
   color: #0f0d0e;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 43px;
+  margin-bottom: 20px;
   justify-items: center;
 }
 
@@ -130,11 +129,11 @@ body {
   display: flex;
   content: "";
   transform: translate(0, 0);
-  width: 70px;
+  width: 48px;
   height: 3px;
   background-color: #b59f5b;
   opacity: 0.4;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .trend {
@@ -142,12 +141,13 @@ body {
   gap: 4px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .trend-container-image {
   background-color: #eff6f1;
   position: relative;
-  min-width: 24%;
+  min-width: 297px;
 }
 
 .trend-container-image:after {
@@ -169,7 +169,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 30vh;
+  height: 18vh;
 }
 
 .trend-container-two {
@@ -179,7 +179,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 30vh;
+  height: 18vh;
 }
 
 .trend-container-three {
@@ -189,7 +189,7 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 30vh;
+  height: 18vh;
 }
 
 .trend-container-four {
@@ -199,13 +199,13 @@ body {
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 30vh;
+  height: 18vh;
 }
 
 .trend-box {
   width: 88%;
   border: 3px solid #b59f5b;
-  padding: 24px 20px 18px 27px;
+  padding: 30px 14px 19px 30px;
   align-self: end;
   position: relative;
   z-index: 1;
@@ -223,7 +223,7 @@ body {
 }
 
 .trend-container {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1;
   margin: 0;
 }
@@ -237,8 +237,8 @@ body {
 }
 
 .card-trend:hover {
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1;
   text-transform: uppercase;
   color: #b59f5b;
   font-weight: 700;
@@ -249,12 +249,14 @@ body {
   display: flex;
   text-transform: uppercase;
   justify-content: space-between;
-  max-width: 1170px;
-  padding: 0 15px;
+  min-width: 864px;
+  padding: 0 10px;
+  margin: 23px 168px 0;
 }
 
 .news {
-  width: 60%;
+  width: 54%;
+  margin-right: 67px;
 }
 
 .mane-news-list {
@@ -265,7 +267,7 @@ body {
 }
 
 .picture-news {
-  max-width: 377px;
+  max-width: 272px;
   position: relative ;
   z-index: 0; 
   align-self: start;
@@ -281,14 +283,14 @@ body {
 .text {
   margin: 0;
   padding: 0;
-  line-height: 1.2;
-  margin-left: 33px;
+  line-height: 1;
+  margin-left: 24px;
 }
 
 .more {
   display: flex;
   padding: 0;
-  margin-top: 0;
+  margin: 0;
   gap: 10px;
 }
 
@@ -302,7 +304,7 @@ body {
   text-decoration: none;
   color: #b59f5b;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1;
 }
 
@@ -312,13 +314,13 @@ body {
 }
 
 .card-news-name {
-  margin: 5px 0 0 0;
+  margin: 0;
 }
 
 .card-name {
   text-decoration: none;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1;
   text-transform: uppercase;
   color: #0f0d0e;
   font-family: "Open Sans", sans-serif;
@@ -327,8 +329,8 @@ body {
 
 .card-name:hover {
   text-decoration: none;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1;
   text-transform: uppercase;
   color: #b59f5b;
   font-family: "Open Sans", sans-serif;
@@ -342,16 +344,16 @@ body {
 }
 
 .new-date {
-  font-size: 11px;
+  font-size: 8px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #888888;
-  margin-right: 12px;
+  margin-right: 9px;
   list-style: none;
 }
 
 .news-author { 
-  font-size: 11px;
+  font-size: 9px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #0f0d0e;
@@ -359,10 +361,10 @@ body {
 }
 
 .new-content {
-  margin-top: 41px;
+  margin-top: 35px;
   margin-bottom: 0;
-  font-size: 13.3px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.2;
   color: #0f0d0e;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -372,8 +374,8 @@ body {
 .new-box {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  margin-top: 34px;
+  width: 216px;
+  margin: 0;
 }
 
 .heading {
@@ -386,27 +388,27 @@ body {
   position: relative;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height:  1.2;
+  font-size: 10px;
+  line-height:  1;
   color: #0f0d0e;
   text-transform: uppercase;
   text-align: center;
-  
+  margin-top: 20px;
 }
 
 .intro-heading:after {
   display: flex;
   content: "";
-  margin: 0 100px;
-  width: 70px;
+  margin: 0 78px;
+  width: 60px;
   height: 2px;
   background-color: #b59f5b;
   opacity: 0.4;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .news-list {
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 
@@ -420,17 +422,17 @@ body {
   display: flex;  
 }
 
-.img-new {
-  max-width: 70px;
-  max-height: 70px;
+.news-img {
+  max-width: 53px;
+  max-height: 53px;
   position: relative;
   z-index: 0; 
 }
 
 .img-new:after {
   content: " ";
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 53px;
+  max-height: 53px;
   background-color: #0f0d0e;
   z-index: -1;
 }
@@ -441,11 +443,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  margin-left: 17px;
+  margin-left: 12px;
 }
 
 .news-date {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1;
   font-family: "Open Sans", sans-serif;
   color: #888888;
@@ -455,18 +457,18 @@ body {
 
 .new-subject {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 
 .new-subject:hover {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.2;
   color: #b59f5b;
 }
@@ -474,8 +476,7 @@ body {
 .search {
   display: flex;
   width: 100%;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 5px 0 0;
 }
 
 .search-group {
@@ -485,7 +486,7 @@ body {
 
 .field {
   box-sizing: border-box;
-  width: 222px;
+  width: 100%;
   height: 48px;
   padding: 19px;
   font-size: 13px;
@@ -517,7 +518,7 @@ body {
 }
 
 .mailing-box {
-  margin-bottom: 34px;
+  margin: 0;
 }
 
 .button-box {
@@ -641,10 +642,10 @@ body {
 
 .shop {
   display: flex;
-  width: 90%;
+  min-width: 864px;
+  padding: 0 15px;
+  margin: 0 168px;
   gap: 50px;
-  padding: 0;
-  margin: 0;
   margin-bottom: 60px;
   justify-self: center;
 }
@@ -654,7 +655,6 @@ body {
   flex-direction: column;
   width: 28%;
   justify-self: center;
-  max-width: 1170px;
   padding: 0 15px;
   
 }
@@ -680,14 +680,14 @@ body {
 }
 
 .shop-heading {
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
 }
 
 .description {
-  font-size: 15px;
+  font-size: 13px;
   margin: 5px 0 0 0;
 }
 
@@ -726,7 +726,7 @@ body {
 }
 
 .product-price-value {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -752,13 +752,13 @@ body {
 }
 
 .footer {
-  width: 1200px;
+  min-width: 864px;
+  margin: 0 168px;
 }
 
 .icon {
   display: flex;
   justify-content: center;
-  width: 90%;
   background: #f3f7f5;
   margin: 0 auto;
   padding: 31px;
@@ -832,7 +832,7 @@ body {
 .popup-content {
   position: relative;
   background: #ffffff;
-  width: 400px;
+  width: 284px;
   box-sizing: border-box;
   z-index: 2;
   padding: 15px;
@@ -840,13 +840,13 @@ body {
 
 .popup-name {
   color: #000000;
-  font-size: 20px;
+  font-size: 14px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   justify-self: center;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 13px;
+  margin-top: 17px;
   justify-items: center;
 }
 
@@ -859,33 +859,33 @@ body {
   height: 3px;
   background-color: #b59f5b;
   opacity: 0.4;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-top: 39px;
+  margin-top: 20px;
 }
 
 .mailing-email {
-  margin-top: 29px;
+  margin: 0;
 }
 
 .select {
   display: inline-block;
   box-sizing: border-box;
-  width: 90%;
+  width: 92%;
   height: 38px;
   padding-left: 10px;
   padding-right: 25px;
-  margin: 10px 20px;
+  margin: 10px 5px;
   border: 1px solid #cbd1d4;
   background-color: #f9f9f9;
-  
-  font-size: 14px;
+  font-size: 10px;
   font-family: Arial,sans-serif;
   color: #333333;
+  appearance: none;
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -893,12 +893,14 @@ body {
 }
 
 .select-label {
-  margin: 0 20px;
+  margin: 0 7px;
+  font-size: 10px;
 }
 
 .radio-group {
   display: inline-block;
-  margin: 5px 5px 15px 20px;
+  margin: 0 0 0 5px;
+  font-size: 12px;
 }
 
 .radio {
@@ -908,13 +910,13 @@ body {
 .radio-group-text:before {
   content: " ";
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-image: url("../svg/form-empty-circle.svg");
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 15px;
+  background-size: 10px;
   padding-right: 10px;
 }
 
@@ -925,17 +927,19 @@ body {
 .field-group {
   display: flex;
   flex-direction: column;
+  margin-top: 22px;
 }
 
 .field-text {
   padding: 0 10px 55px;
-  margin: 18px 20px 0;
+  margin: 18px 7px 0;
+  font-size: 10px;
 }
 
 .button-text {
-  margin: 0 20px;
+  margin: 0 7px;
   display: flex;
-  width: 90%;
+  width: 95%;
   height: 48px;
   font-size: 18px;
   line-height: 2.8;
@@ -977,7 +981,12 @@ body {
 @media(min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .header-wrap {
     background-image: url("../images/banner-bg-tablet.jpg");
-    width: 100%;
+    min-width: 641px;
+  }
+
+  .header-container {
+    min-width: 612px;
+    margin: 0;
   }
 
   .logo {
@@ -987,7 +996,8 @@ body {
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    width: 23px;
+    height: 53px;
   }
 
   .menu-button {
@@ -1053,7 +1063,7 @@ body {
   }
 
   .title-news {
-    width: 100%;
+    min-width: 641px;
   }
 
   .trend {
@@ -1062,38 +1072,47 @@ body {
   }
 
   .page {
-    width: 100%;
+    min-width: 461px;
+    margin: 23px 30px 0;
+    justify-content: space-around;
+}
+
+  .news {
+    width: 63%;
+    margin-right: 20px;
   }
 
   .mane-news-list {
     flex-direction: column;
   }
 
-  .picture-news {
-    align-self: center;
-  }
-
   .text {
-    width: 377px;
-    margin: 0;
-    line-height: 1.2;
-    align-self: center;
+    margin-left: 10px;
+    max-width: 272px;
   }
 
   .shop {
     flex-wrap: wrap;
+    min-width: 612px;
+    margin: 0 89px;
   }
 
   .footer {
-    width: 100%;
+    min-width: 612px;
+    margin: 50px 10px 0;
   }
 
 }
 
 @media(min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-   .header-wrap {
+    .header-wrap {
     background-image: url("../images/banner-bg-tablet.jpg");
-    width: 100%;
+    min-width: 641px;
+  }
+
+  .header-container {
+    min-width: 612px;
+    margin: 0;
   }
 
   .logo {
@@ -1103,7 +1122,8 @@ body {
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    width: 23px;
+    height: 53px;
   }
 
   .menu-button {
@@ -1169,7 +1189,7 @@ body {
   }
 
   .title-news {
-    width: 100%;
+    min-width: 641px;
   }
 
   .trend {
@@ -1178,30 +1198,34 @@ body {
   }
 
   .page {
-    width: 100%;
+    min-width: 461px;
+    margin: 23px 30px 0;
+    justify-content: space-around;
+}
+
+  .news {
+    width: 63%;
+    margin-right: 20px;
   }
 
   .mane-news-list {
     flex-direction: column;
   }
 
-  .picture-news {
-    align-self: center;
-  }
-
   .text {
-    width: 377px;
-    margin: 0;
-    line-height: 1.2;
-    align-self: center;
+    margin-left: 10px;
+    max-width: 272px;
   }
 
   .shop {
     flex-wrap: wrap;
+    min-width: 612px;
+    margin: 0 89px;
   }
 
   .footer {
-    width: 100%;
+    min-width: 612px;
+    margin: 50px 10px 0;
   }
 
 }
@@ -1214,17 +1238,18 @@ body {
 
   .header-container {
     flex-direction: column-reverse;
+    max-width: 611px;
   }
 
   .logo {
-    width: 74%;
-    margin-top: 148px;
+    width: 105%;
+    margin-top: 640px;
   }
 
   .menu-button {
     display: block;
-    width: 23px;
-    height: 53px;
+    width: 73px;
+    height: 107px;
     border: none;
     padding: 0;
     background-color: transparent;
@@ -1232,14 +1257,15 @@ body {
     position: relative;
     text-indent: -9999px;
     cursor: pointer;
-    left: 152px;
+    left: 517px;
+    top: 87px;
 
   }
 
   .menu-button:before, .menu-button:after {
     content: "";
     width: 100%;
-    height: 5%;
+    height: 8%;
     border-radius: 5px;
     background-color: #ffffff;
     position: absolute;
@@ -1280,7 +1306,7 @@ body {
   }  
 
   .intro-title {
-    margin: 21px auto;
+    justify-content: center;
     width: 100%;
     font-size: 26px;
   }
@@ -1288,6 +1314,7 @@ body {
     .title-news {
     max-width: 640px;
   }
+
   .title-name {
     font-size: 16px;
   }
@@ -1329,6 +1356,7 @@ body {
     opacity: 0.4;
     margin-top: 10px;
   }
+
   .card {
     display: flex;
     padding: 0;
@@ -1342,7 +1370,6 @@ body {
   .card-name:hover {
     font-size: 16px;
   }
-
 
   .new-content {
     display: flex;
@@ -1501,5 +1528,3 @@ body {
     flex-wrap: wrap;
   }
 }
-
-
