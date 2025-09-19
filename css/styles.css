@@ -134,6 +134,7 @@ body {
   background-color: #b59f5b;
   opacity: 0.4;
   margin-top: 7px;
+  justify-items: center;
 }
 
 .trend {
