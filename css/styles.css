@@ -663,6 +663,8 @@ body {
 .shop-img {
   display: flex;
   background-color: #eff6f1;
+  width: 50%;
+  height: auto;
 }
 
 .shop-box {
