@@ -1320,7 +1320,6 @@ body {
     font-size: 30px;
     line-height: 1.5;
     margin: 42px 17px;
-    align-items: center;
   }
 
   .title-news {
@@ -1331,6 +1330,7 @@ body {
   .title-name {
     font-size: 18px;
     margin: 50px 0 39px;
+    align-items: center;
   }
 
   .trend {
