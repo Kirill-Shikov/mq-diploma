@@ -663,7 +663,7 @@ body {
 .shop-img {
   display: flex;
   background-color: #eff6f1;
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -1266,7 +1266,7 @@ body {
     position: relative;
     text-indent: -9999px;
     cursor: pointer;
-    left: 212px;
+    left: 145px;
     top: 22px;
 
   }
@@ -1319,7 +1319,7 @@ body {
     width: 336px;
     font-size: 30px;
     line-height: 1.5;
-    margin: 42px 52px;
+    margin: 42px 17px;
   }
 
   .title-news {
@@ -1372,7 +1372,7 @@ body {
   }
 
   .picture-news {
-    max-width: 380px;
+    max-width: 346px;
   }
 
   .text {
@@ -1422,7 +1422,7 @@ body {
     display: flex;
     content: "";
     margin: 0;
-    width: 411px;
+    width: 346px;
     height: 2px;
     background-color: #808080;
     opacity: 0.4;
