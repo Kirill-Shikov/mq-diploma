@@ -146,9 +146,10 @@ body {
 }
 
 .trend-container-image {
+  display: flex;
   background-color: #eff6f1;
   position: relative;
-  min-width: 297px;
+  width: 25%;
 }
 
 .trend-container-image:after {
@@ -164,46 +165,51 @@ body {
 }
 
 .trend-container-one {
+  width: -webkit-fill-available;
   background-image: url("../images/trend1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 18vh;
+  min-height: 18vh;
 }
 
 .trend-container-two {
+  width: -webkit-fill-available;
   background-image: url("../images/trend2.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 18vh;
+  min-height: 18vh;
 }
 
 .trend-container-three {
+  width: -webkit-fill-available;
   background-image: url("../images/trend3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 18vh;
+  min-height: 18vh;
 }
 
 .trend-container-four {
+  width: -webkit-fill-available;
   background-image: url("../images/trend4.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 15px 26px 15px 19px;
   align-content: end;
-  height: 18vh;
+  min-height: 18vh;
 }
 
 .trend-box {
+  margin-top: 100px;
   width: 88%;
   border: 3px solid #b59f5b;
   padding: 30px 14px 19px 30px;
@@ -251,6 +257,7 @@ body {
   text-transform: uppercase;
   justify-content: space-between;
   min-width: 864px;
+  max-width: 1200px;
   padding: 0 10px;
   margin: 23px 168px 0;
 }
@@ -679,6 +686,7 @@ body {
   line-height: 1.2;
   color: #0f0d0e;
   font-weight: 400;
+  flex-grow: 1
 }
 
 .shop-heading {
@@ -1069,8 +1077,11 @@ body {
   }
 
   .trend {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   flex-wrap: wrap;
+  }
+
+  .trend-container-image { 
+    width: 49%;
   }
 
   .page {
@@ -1195,8 +1206,11 @@ body {
   }
 
   .trend {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   flex-wrap: wrap;
+  }
+
+  .trend-container-image { 
+    width: 49%;
   }
 
   .page {
@@ -1257,7 +1271,7 @@ body {
 
   .menu-button {
     display: block;
-    width: 73px;
+    width: 52px;
     height: 52px;
     border: none;
     padding: 0;
@@ -1266,7 +1280,7 @@ body {
     position: relative;
     text-indent: -9999px;
     cursor: pointer;
-    left: 145px;
+    left: 170px;
     top: 22px;
 
   }
@@ -1320,6 +1334,7 @@ body {
     font-size: 30px;
     line-height: 1.5;
     margin: 42px 17px;
+    justify-self: center;
   }
 
   .title-news {
@@ -1334,8 +1349,11 @@ body {
   }
 
   .trend {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
+  }
+
+  .trend-container-image {
+    width: 100%;
   }
 
   .trend-container-one {
@@ -1618,8 +1636,11 @@ body {
   }
 
   .trend {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   flex-wrap: wrap;
+  }
+
+  .trend-container-image { 
+    width: 49%;
   }
 
   .page {
@@ -1654,3 +1675,4 @@ body {
   }
 
 }
+
